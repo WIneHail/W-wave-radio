@@ -1,0 +1,231 @@
+.podcasts {
+   padding-top: 94px;
+   padding-bottom: 92px;
+   background-color: var(--pale-gray);
+}
+
+.podcasts__title {
+   margin-bottom: 30px;
+}
+
+.podcasts__item {
+   position: relative;
+   display: inline-block;
+   min-height: 142px;
+   width: 48.6%;
+   padding: 40px 64px 40px 142px;
+   background-color: var(--white);
+}
+
+.podcasts__item::before {
+   content: " ";
+   position: absolute;
+   height: 100%;
+   width: 112px;
+   left: 0;
+   top: 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.podcasts__item::after {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 51px;
+   height: 16px;
+   background-color: var(--pale-gray);
+   font-size: 10px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   text-align: center;
+}
+
+.podcasts__item:nth-child(1)::before {
+   background-image: url(../img/podcast_1.png);
+}
+
+.podcasts__item:nth-child(1):after {
+   content: "14 июня";
+}
+
+.podcasts__item:nth-child(2)::before {
+   background-image: url(../img/podcast_2.png);
+}
+
+.podcasts__item:nth-child(2):after {
+   content: "11 июня";
+}
+
+.podcasts__item:nth-child(3)::before {
+   background-image: url(../img/podcast_3.png);
+}
+
+.podcasts__item:nth-child(3):after {
+   content: "8 июня";
+}
+
+.podcasts__item:nth-child(4)::before {
+   background-image: url(../img/podcast_4.png);
+}
+
+.podcasts__item:nth-child(4):after {
+   content: "5 июня";
+}
+
+.podcasts__item:nth-child(5)::before {
+   background-image: url(../img/podcast_5.png);
+}
+
+.podcasts__item:nth-child(5):after {
+   content: "2 июня";
+}
+
+.podcasts__item:nth-child(6)::before {
+   background-image: url(../img/podcast_6.png);
+}
+
+.podcasts__item:nth-child(6):after {
+   content: "28 мая";
+}
+
+.podcasts__item:nth-child(7)::before {
+   background-image: url(../img/podcast_7.png);
+}
+
+.podcasts__item:nth-child(7):after {
+   content: "22 мая";
+}
+
+.podcasts__item:nth-child(8)::before {
+   background-image: url(../img/podcast_8.png);
+}
+
+.podcasts__item:nth-child(8):after {
+   content: "18 мая";
+}
+
+.podcasts__time {
+   display: block;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-bottom: 9px;
+}
+
+.podcasts__content {
+   display: inline-block;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.podcasts__header {
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.podcasts__autor {
+   color: var(--gray);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+@media (max-width: 1600px) {
+   .podcasts__item {
+      width: 48%;
+      padding: 39px 64px 39px 142px;
+      min-height: 140px;
+   }
+
+   .podcasts {
+      padding-bottom: 94px;
+   }
+}
+
+@media (max-width: 970px) {
+   .podcasts__item {
+      width: 100%;
+   }
+}
+
+@media (max-width: 700px) {
+
+   .podcasts {
+      padding-top: 54px;
+      padding-bottom: 51px;
+   }
+
+   .podcasts__item::before {
+      width: 100%;
+      height: 39%;
+   }
+
+   .podcasts__title {
+      font-size: 24px;
+      margin-bottom: 20px;
+   }
+
+   .podcasts__item::after {
+      padding-top: 2px;
+      height: 14px;
+      bottom: unset;
+      top: 0;
+   }
+
+   .podcasts__item {
+      padding: 101px 64px 28px 16px;
+      width: 100%;
+   }
+
+   .podcasts__time {
+      margin-bottom: 8px;
+   }
+
+   .podcasts__header {
+      font-size: 16px;
+   }
+
+   .podcasts__autor {
+      font-size: 12px;
+   }
+
+   .podcasts__item:nth-child(1)::before {
+      background-image: url(../img/podcast_1-320.png);
+   }
+
+   .podcasts__item:nth-child(2)::before {
+      background-image: url(../img/podcast_2-320.png);
+   }
+
+   .podcasts__item:nth-child(3)::before {
+      background-image: url(../img/podcast_3-320.png);
+   }
+
+   .podcasts__item:nth-child(4)::before {
+      background-image: url(../img/podcast_4-320.png);
+   }
+
+   .podcasts__item:nth-child(5)::before {
+      background-image: url(../img/podcast_5-320.png);
+   }
+
+   .podcasts__item:nth-child(6)::before {
+      background-image: url(../img/podcast_6-320.png);
+   }
+
+   .podcasts__item:nth-child(7)::before {
+      background-image: url(../img/podcast_7-320.png);
+   }
+
+   .podcasts__item:nth-child(8)::before {
+      background-image: url(../img/podcast_8-320.png);
+   }
+}

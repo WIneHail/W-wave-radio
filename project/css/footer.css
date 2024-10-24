@@ -1,0 +1,253 @@
+.container-footer {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   padding-right: 73px;
+   justify-content: space-between;
+}
+
+.footer {
+   position: relative;
+   padding-top: 94px;
+   padding-bottom: 141px;
+   background: #292E39;
+
+}
+
+.footer::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 12px;
+   bottom: 37px;
+   left: 0px;
+   background-image: url(../img/Vector-2.svg);
+}
+
+.footer::after {
+   content: "W-WAVE ® 2023";
+   position: absolute;
+   bottom: 10px;
+   left: 46.6%;
+   color: var(--gray);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 103.336%;
+}
+
+.footer__logo {
+   margin-bottom: 15px;
+   width: 160px;
+}
+
+.footer__socials {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   max-width: 135px;
+}
+
+.socials__item:not(:last-child) {
+   margin-right: 21px;
+}
+
+.socials__badge path {
+   transition: fill .5s ease-in-out;
+}
+
+@media (hover: hover) {
+   .socials__link:hover .socials__badge path {
+      fill: var(--violet);
+   }
+}
+
+.socials__link:focus .socials__badge path {
+   fill: var(--pale-violet);
+}
+
+.socials__link:active .socials__badge path {
+   fill: var(--pale-violet);
+}
+
+.nav__list-footer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   max-width: 472px;
+   row-gap: 17px;
+   column-gap: 105px;
+}
+
+.nav__link-footer {
+   color: var(--white);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.nav__item-footer {
+   min-width: 85px;
+}
+
+@media (max-width: 1600px) {
+   .container-footer {
+      padding-right: 71px;
+   }
+
+   .nav__list-footer {
+      max-width: 475px;
+      column-gap: 106px;
+   }
+
+   .container-footer::after {
+      left: 43.6%;
+   }
+
+   .container-footer::before {
+      background-position: top;
+   }
+
+   .footer::after {
+      left: 43.6%;
+   }
+}
+
+
+@media (max-width: 970px) {
+   .container-footer {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 114px;
+      padding-left: 114px;
+   }
+
+   .footer {
+      padding-bottom: 128px;
+   }
+
+   .container-footer::after {
+      left: 41.6%;
+   }
+
+   .footer__wrapper {
+      margin-bottom: 74px;
+   }
+
+   .footer__socials {
+      justify-content: center;
+   }
+
+   .nav__list-footer {
+      row-gap: 27px;
+      max-width: unset;
+      column-gap: 156px;
+   }
+
+   .socials__badge {
+      width: 36px;
+      height: 36px;
+   }
+
+   .nav__item-footer:nth-child(3n+1) {
+      min-width: 76px;
+   }
+
+   .nav__item-footer:nth-child(3n+2) {
+      min-width: 86px;
+   }
+
+   .nav__item-footer:nth-child(3n+3) {
+      min-width: 65px;
+   }
+
+   .footer::after {
+      left: 41.6%;
+   }
+}
+
+@media (max-width: 700px) {
+
+   .container-footer {
+      padding-left: 0;
+      padding-right: 0;
+   }
+
+   .footer {
+      padding-top: 54px;
+      padding-bottom: 59px;
+   }
+
+   .footer__nav {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      display: flex;
+      padding: 0 32px;
+      padding-right: 115px;
+      background: #121723;
+   }
+
+   .footer__wrapper {
+      margin-bottom: 49px;
+   }
+
+   .footer__socials {
+      max-width: 160px;
+   }
+
+   .form__checkbox {
+      margin-right: 6px;
+   }
+
+   .nav__link-footer {
+      font-size: 12px;
+   }
+
+   .nav__list-footer {
+      position: relative;
+      max-height: 250px;
+      flex-direction: column;
+      column-gap: 57px;
+      row-gap: 18px;
+      padding: 26px 0;
+      z-index: 1
+   }
+
+   .nav__item-footer {
+      order: 3;
+   }
+
+   .nav__item-footer:nth-child(1) {
+      order: 1;
+   }
+
+   .nav__item-footer:nth-child(4) {
+      order: 1;
+   }
+
+   .nav__item-footer:nth-child(7) {
+      order: 1;
+   }
+
+
+   .nav__item-footer:nth-child(2) {
+      order: 2;
+   }
+
+   .nav__item-footer:nth-child(5) {
+      order: 2;
+   }
+
+   .nav__item-footer:nth-child(8) {
+      order: 2;
+   }
+
+   .footer::after {
+      left: 35%;
+      bottom: 17px;
+      font-size: 12px;
+   }
+
+}
